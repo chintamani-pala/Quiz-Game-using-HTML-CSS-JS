@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="google-site-verification" content="OGsN9sG-SXbpGHGtWL0XgERbktbmPkyT5IfduMIdQUE" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="jquery.countdownTimer.css" />
+  <!-- Favicon -->
+  <title>Quiz App</title>
+</head>
+
+<body>
+  <div class="home" id="home">
+    <div id="particles-js"></div>
+    <div id="containermain">
+      <div class="content">
+        <marquee style="color: #9c9388a1" direction="left" scrollamount="3">Created By
+          <b><a style="text-decoration: none; color: aqua" href="https://github.com/chintamani-pala/">Chintamani
+              Pala</a> </b><span id="contactspan"></span>
+        </marquee>
+        <div class="questionparent">
+          <p class="questions" id="questions"></p>
+        </div>
+        <div class="parentanswer">
+          <div class="optionsfield">
+            <input type="radio" class="checkinput" name="option" for="option1" id="option1in"/><label class="inputlable" for="option1in"
+            id="option1" ></label><br />
+            <input type="radio" class="checkinput" name="option" for="option2" id="option2in"/><label class="inputlable" for="option2in"
+              id="option2"></label><br />
+            <input type="radio" class="checkinput" name="option" for="option3" id="option3in" /><label class="inputlable" for="option3in"
+              id="option3"></label><br />
+            <input type="radio" class="checkinput" name="option" for="option4" id="option4in" /><label class="inputlable" for="option4in"
+              id="option4"></label>
+          </div>
+        </div>
+        <p id="isanscorrect"></p>
+        <div class="questiontypes">
+          <label for="trivia_category" class="trivia_category_label">Select Category: </label>
+          <select id="trivia_category" name="trivia_category" class="trivia_category">
+            <option value="any">Any Category</option>
+            <option value="9">General Knowledge</option>
+            <option value="10">Entertainment: Books</option>
+            <option value="11">Entertainment: Film</option>
+            <option value="12">Entertainment: Music</option>
+            <option value="13">
+              Entertainment: Musicals &amp; Theatres
+            </option>
+            <option value="14">Entertainment: Television</option>
+            <option value="15">Entertainment: Video Games</option>
+            <option value="16">Entertainment: Board Games</option>
+            <option value="17">Science &amp; Nature</option>
+            <option value="18">Science: Computers</option>
+            <option value="19">Science: Mathematics</option>
+            <option value="20">Mythology</option>
+            <option value="21">Sports</option>
+            <option value="22">Geography</option>
+            <option value="23">History</option>
+            <option value="24">Politics</option>
+            <option value="25">Art</option>
+            <option value="26">Celebrities</option>
+            <option value="27">Animals</option>
+            <option value="28">Vehicles</option>
+            <option value="29">Entertainment: Comics</option>
+            <option value="30">Science: Gadgets</option>
+            <option value="31">
+              Entertainment: Japanese Anime &amp; Manga
+            </option>
+            <option value="32">
+              Entertainment: Cartoon &amp; Animations
+            </option>
+          </select><br>
+          <label for="trivia_difficulty">Select Difficulty: </label>
+          <select id="trivia_difficulty" name="trivia_difficulty" class="trivia_difficulty">
+            <option value="any">Any Difficulty</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <div class="resultdiv">
+          <div id="countdowntimer"><span id="future_date"><span></div>
+          <span>Time : </span><span id="time">0m : 0s</span><br>
+          <span>Score : </span><span id="displayscore">0</span>
+        </div>
+        <button name="nextQuestion" onclick="btn()" id="nextQuestion" style="margin-right: 10px">
+          Next
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="assets/js/particles.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/security.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  background: url("man.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*height: 630px; */
+  background-attachment: fixed;
+}
+
+body {
+  place-items: center;
+  text-align: center;
+  background-size: cover;
+}
+
+.home {
+  position: relative;
+  display: grid;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 99vh;
+  align-items: center;
+  justify-content: center;
+}
+.home #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.home .content {
+  flex: 1 1 40rem;
+  padding-top: 1rem;
+  z-index: 1;
+}
+#containermain{
+  display: flex;
+}
+.content {
+  width: 439px;
+  background-color: #323030ba;
+  border-radius: 10px;
+  padding: 20px 12px;
+  margin-top: 100px;
+  box-shadow: -3px -3px 9px #aaa9a9a2, 3px 3px 7px rgba(147, 149, 151, 0.671);
+}
+
+.content .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: rgb(247, 233, 233);
+}
+
+.content .field {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.field input {
+  height: 150%;
+  width: 100%;
+  padding-left: 25px;
+  font-size: 30px;
+  outline: none;
+  border: none;
+  color: #e0d2d2;
+  border: 1px solid rgba(255, 255, 255, 0.438);
+  border-radius: 8px;
+  background: rgba(105, 105, 105, 0);
+}
+
+.field input::placeholder {
+  color: #e0d2d2a6;
+}
+.field:nth-child(2) {
+  margin-top: 20px;
+}
+
+.field span {
+  position: absolute;
+  width: 50px;
+  line-height: 50px;
+  color: #ffffff;
+}
+
+button {
+  margin: 25px 0 0 0;
+  width: 75%;
+  height: 50px;
+  color: rgb(238, 226, 226);
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid rgba(255, 255, 255, 0.438);
+  border-radius: 8px;
+  background: rgba(105, 105, 105, 0);
+  margin-top: 15px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.content .or {
+  color: rgba(255, 255, 255, 0.733);
+  margin-top: 9px;
+}
+
+.icon-button {
+  margin-top: 15px;
+}
+.icon-button span {
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: rgba(244, 247, 250, 0.795);
+  border-radius: 5px;
+  line-height: 30px;
+  background: rgba(255, 255, 255, 0.164);
+  backdrop-filter: blur(10px);
+}
+.icon-button span.facebook {
+  margin-right: 17px;
+}
+button:hover,
+.icon-button span:hover {
+  background-color: #babecc8c;
+}
+.optionsfield{
+  text-align: left;
+  color: #000000;
+  margin: 20px;
+  padding-top: 15px;
+  /* padding-bottom: 15px; */
+}
+.checkinput{
+  margin: 0px 10px 10px 10px;
+  width: 20px;
+  height: 20px;
+}
+.inputlable{
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.questions{
+  text-align: left;
+  margin-left: 25px;
+  color: rgb(0, 0, 0);
+  font-size: 20px
+}
+.questionparent{
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-color: #ffffffbd;
+}
+.parentanswer{
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-color:#ffffffbd;
+}
+.trivia_category,.trivia_difficulty{
+  width: 110px;
+  border-radius: 2px;
+  border-color: rgba(1, 39, 207, 0.786);
+}
+.questiontypes{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #e0d2d2;
+  text-align: start;
+}
+.resultdiv{
+  text-align: start;
+  margin: 20px;
+  color: #bbbbc7;
+}
+@media only screen and (max-width: 600px) {
+  .home {
+    min-height: 93vh;
+  }
+  
+}
