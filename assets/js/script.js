@@ -7,6 +7,8 @@ let scorevalue=0
 let correctans=""
 let currectvalue=-1
 let istimestarted=0
+let correct=0
+let wrong=0
 var elements = document.getElementsByTagName("input");
 function unselectradio(){
     for (var i = 0; i < elements.length; i++) {
@@ -93,6 +95,8 @@ function restartGame(){
     nextQuestion.innerHTML="Next"
     timesec=quizTime
     quesionno=0
+    correct=0
+    wrong=0
     answerd=0
     scorevalue=0
     displayscore.innerHTML=scorevalue
@@ -150,13 +154,13 @@ function startTime(){
             if(scorevalue>0){
                 Swal.fire(
                     'You Win',
-                    'Hay Master You Win This Game',
+                    `Hay Master You Win This Game<br> Question Attempted : ${answerd} <br> Correct : ${correct} <br> Wrong : ${wrong}`,
                     'success'
                   )
             }else{
                 Swal.fire(
                     'You Loss',
-                    'Hay Master try Again',
+                    `Hay Master try Again <br> Question Attempted : ${answerd} <br> Correct : ${correct} <br> Wrong : ${wrong}`,
                     'error'
                   )
             }
@@ -186,11 +190,13 @@ function answerdoption(value){
         isanscorrect.style.color="#00ff00"
         isanscorrect.innerHTML="Wow Your Answer Is Correct"
         scorevalue++
+        correct++
         displayscore.innerHTML=scorevalue
     }else{
         isanscorrect.style.color="red"
         isanscorrect.innerHTML="Sorry Answer Is Incorrect"
         scorevalue--
+        wrong++
         displayscore.innerHTML=scorevalue
     }
 }
