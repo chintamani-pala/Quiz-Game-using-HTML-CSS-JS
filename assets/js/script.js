@@ -177,6 +177,7 @@ function answerdoption(value){
     option2in.disabled=true
     option3in.disabled=true
     option4in.disabled=true
+    answerd++
     if(currectvalue==0){
         option1.style.color="#1000ff0"
     }else if(currectvalue==1){
