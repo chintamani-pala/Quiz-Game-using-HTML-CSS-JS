@@ -195,7 +195,7 @@ function answerdoption(value){
         displayscore.innerHTML=scorevalue
     }else{
         isanscorrect.style.color="red"
-        isanscorrect.innerHTML="Sorry Answer Is Incorrect"
+        isanscorrect.innerHTML=`Sorry Answer Is Incorrect . The correct answer is ${correctans}`
         scorevalue--
         wrong++
         displayscore.innerHTML=scorevalue
