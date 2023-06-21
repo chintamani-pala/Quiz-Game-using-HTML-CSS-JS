@@ -1,4 +1,4 @@
-let quizTime=60
+let quizTime=120
 var fetchurl="https://opentdb.com/api.php?amount=1&type=multiple"
 var timesec=quizTime
 let quesionno=0
